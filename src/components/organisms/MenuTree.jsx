@@ -9,7 +9,7 @@ const MenuTree = ({ data, onSelect, onAddMenu, expandedItems }) => {
           key={item.id}
           item={item}
           onClick={onSelect}
-          onAddMenuClick={() => onAddMenu(item)} // Tambah menu untuk item saat ini
+          onAddMenuClick={(item) => onAddMenu && onAddMenu(item)} // Panggil onAddMenu sebagai fungsi jika ada
           expandedItems={expandedItems}
         />
       ))}

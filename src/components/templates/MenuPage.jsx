@@ -13,6 +13,7 @@ const MenuPage = () => {
   const [isLoading, setIsLoading] = useState(true); // Status loading
   const [expandedItems, setExpandedItems] = useState({}); // Status expand/collapse
   const [selectedMenu, setSelectedMenu] = useState(null); // Menu yang dipilih untuk form
+  const [isAddingNew, setIsAddingNew] = useState(false); // Kontrol tampilan form add menu
   const [isExpandClicked, setIsExpandClicked] = useState(false);
   const [isCollapseClicked, setIsCollapseClicked] = useState(false);
 
@@ -101,17 +102,31 @@ const MenuPage = () => {
   // Fungsi untuk memilih menu dari tree
   const handleSelectMenu = (menu) => {
     setSelectedMenu(menu);
+    setIsAddingNew(false); // pastikan mode edit saat memilih menu
+  };
+
+  // Fungsi untuk menampilkan form add menu
+  const handleAddMenu = (parentItem) => {
+    setSelectedMenu({ parent_id: parentItem.id, depth: parentItem.depth + 1 });
+    setIsAddingNew(true); // Tampilkan form untuk menambah menu baru
   };
 
   const handleMenuUpdate = async (updatedMenu) => {
     try {
-      if (selectedMenuId) {
+      if (isAddingNew) {
+        await axios.post(
+          `${process.env.REACT_APP_API_URL}/api/menu-items`,
+          updatedMenu
+        );
+      } else {
         await axios.put(
           `${process.env.REACT_APP_API_URL}/api/menu-items/${updatedMenu.id}`,
           updatedMenu
         );
-        fetchMenuData(selectedMenuId);
       }
+      fetchMenuData(selectedMenuId);
+      setIsAddingNew(false); // Tutup form add menu setelah menyimpan
+      setSelectedMenu(null);
     } catch (error) {
       console.error("Error updating menu data:", error);
     }
@@ -134,7 +149,7 @@ const MenuPage = () => {
       {/* Loading indicator */}
       {isLoading && <Loader />}
 
-      {/* Menu Tree and Form */}
+      {/* Dropdown menu */}
       <div className="w-full md:w-1/2">
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">
@@ -154,45 +169,43 @@ const MenuPage = () => {
           </select>
         </div>
       </div>
+
+      {/* Expand and Collapse Buttons */}
+      <div className="flex space-x-2 mt-4 mb-4">
+        <Button
+          onClick={handleExpandAll}
+          className={`${
+            isExpandClicked
+              ? "bg-black text-white"
+              : "bg-white text-black border border-black hover:bg-black hover:text-white"
+          } w-full rounded-3xl font-bold`}
+        >
+          Expand All
+        </Button>
+        <Button
+          onClick={handleCollapseAll}
+          className={`${
+            isCollapseClicked
+              ? "bg-black text-white"
+              : "bg-white text-black border border-black hover:bg-black hover:text-white"
+          } w-full rounded-3xl font-bold`}
+        >
+          Collapse All
+        </Button>
+      </div>
+
       <div className="flex flex-col md:flex-row mt-4">
-        {/* Dropdown menu */}
-
         <div className="w-full md:w-1/2 p-4">
-          {/* Expand and Collapse Buttons */}
-          <div className="flex space-x-2 mt-4 mb-4">
-            <Button
-              onClick={handleExpandAll}
-              className={`${
-                isExpandClicked
-                  ? "bg-black text-white"
-                  : "bg-white text-black border border-black hover:bg-black hover:text-white"
-              } w-full rounded-3xl font-bold`}
-            >
-              Expand All
-            </Button>
-            <Button
-              onClick={handleCollapseAll}
-              className={`${
-                isCollapseClicked
-                  ? "bg-black text-white"
-                  : "bg-white text-black border border-black hover:bg-black hover:text-white"
-              } w-full rounded-3xl font-bold`}
-            >
-              Collapse All
-            </Button>
-          </div>
-
-          <div className="mt-4">
-            <MenuTree
-              data={menuData}
-              onSelect={handleSelectMenu}
-              expandedItems={expandedItems}
-            />
-          </div>
+          <MenuTree
+            data={menuData}
+            onSelect={handleSelectMenu}
+            onAddMenu={handleAddMenu} // Panggil handleAddMenu saat "+" diklik
+            expandedItems={expandedItems}
+          />
         </div>
 
         <div className="w-full md:w-1/2 p-4 mt-4">
-          {selectedMenu ? (
+          {isAddingNew || selectedMenu ? (
             <MenuForm
               selectedMenu={selectedMenu}
               allItems={allItems}
@@ -202,7 +215,10 @@ const MenuPage = () => {
           ) : (
             <div className="text-gray-500 bg-white p-6 shadow rounded">
               <h2 className="text-lg font-semibold mb-2">Detail Menu</h2>
-              <p>Select a menu to show and edit its details.</p>
+              <p>
+                Select a menu to show and edit its details, or click "+" to add
+                a submenu.
+              </p>
             </div>
           )}
         </div>

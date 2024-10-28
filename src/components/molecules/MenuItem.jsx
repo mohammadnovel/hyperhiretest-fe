@@ -19,12 +19,16 @@ const MenuItem = ({ item, onClick, onAddMenuClick, expandedItems }) => {
           <span className="mr-2 text-gray-500">{isOpen ? "v" : ">"}</span>
         )}
         <span className="text-gray-800">{item.name}</span>
-        {/*  */}
+        {/* Tampilkan tombol "+" hanya jika item.name adalah "System Code" */}
         {item.name === "System Code" && (
           <button
             onClick={(e) => {
-              e.stopPropagation();
-              onAddMenuClick(item); // Panggil handleAddMenu
+              e.stopPropagation(); // Mencegah toggle saat tombol diklik
+              if (typeof onAddMenuClick === "function") {
+                onAddMenuClick(item); // Pastikan onAddMenuClick adalah fungsi
+              } else {
+                console.warn("onAddMenuClick is not a function");
+              }
             }}
             className="ml-2 bg-blue-500 text-white px-2 py-1 rounded-full"
           >
