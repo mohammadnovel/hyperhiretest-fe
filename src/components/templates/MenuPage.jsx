@@ -20,8 +20,9 @@ const MenuPage = () => {
   const fetchMenuOptions = async () => {
     try {
       const response = await axios.get(
-        "${process.env.REACT_APP_API_URL}/api/get-menu"
+        `${process.env.REACT_APP_API_URL}/api/get-menu`
       );
+
       setMenuOptions(response.data);
     } catch (error) {
       console.error("Error fetching menu options:", error);
