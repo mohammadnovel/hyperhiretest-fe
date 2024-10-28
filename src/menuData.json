@@ -1,0 +1,340 @@
+[
+  {
+    "id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+    "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+    "parent_id": null,
+    "name": "Systems",
+    "depth": 1,
+    "created_at": "2024-10-28T11:17:53.000000Z",
+    "updated_at": "2024-10-28T11:17:53.000000Z",
+    "children": [
+      {
+        "id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "API List",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "dcddcd35-91ba-4854-b9fd-d49fb9576aca",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+            "name": "API Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          },
+          {
+            "id": "defcbb08-97cc-4ffa-bbb7-69824eb5a9c9",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+            "name": "API Edit",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "2f90626b-c949-44bc-9f84-dd04f49817c3",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "System Code",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "297b51cb-3cc9-4136-beba-4e3ec4408fe1",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "2f90626b-c949-44bc-9f84-dd04f49817c3",
+            "name": "Code Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "4f6ebe9a-f21e-4073-bbb6-d95834face70",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Code Registration - 2",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": []
+      },
+      {
+        "id": "cb22494f-3c53-460d-89aa-9573054330ff",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Properties",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": []
+      },
+      {
+        "id": "fb88f5e5-9f79-4410-8fc2-cf3e188028d1",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Menus",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "323d94a4-0b37-4db2-9704-9910976f82c1",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "fb88f5e5-9f79-4410-8fc2-cf3e188028d1",
+            "name": "Menu Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "children_recursive": [
+      {
+        "id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "API List",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "dcddcd35-91ba-4854-b9fd-d49fb9576aca",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+            "name": "API Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          },
+          {
+            "id": "defcbb08-97cc-4ffa-bbb7-69824eb5a9c9",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "0ac6e919-e959-442e-895c-bc0c20bd61d5",
+            "name": "API Edit",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      },
+      {
+        "id": "2f90626b-c949-44bc-9f84-dd04f49817c3",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "System Code",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "297b51cb-3cc9-4136-beba-4e3ec4408fe1",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "2f90626b-c949-44bc-9f84-dd04f49817c3",
+            "name": "Code Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      },
+      {
+        "id": "4f6ebe9a-f21e-4073-bbb6-d95834face70",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Code Registration - 2",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": []
+      },
+      {
+        "id": "cb22494f-3c53-460d-89aa-9573054330ff",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Properties",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": []
+      },
+      {
+        "id": "fb88f5e5-9f79-4410-8fc2-cf3e188028d1",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "788ad70f-e18d-4605-ab96-9ffb143f6287",
+        "name": "Menus",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "323d94a4-0b37-4db2-9704-9910976f82c1",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "fb88f5e5-9f79-4410-8fc2-cf3e188028d1",
+            "name": "Menu Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "85935883-33c2-482f-9171-5838c9955486",
+    "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+    "parent_id": null,
+    "name": "Users & Groups",
+    "depth": 1,
+    "created_at": "2024-10-28T11:17:53.000000Z",
+    "updated_at": "2024-10-28T11:17:53.000000Z",
+    "children": [
+      {
+        "id": "5379fa6e-0a15-42cd-ad5a-85eef9cf8d56",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "사용자승인",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "0739180e-48ea-4797-994c-177e9f3e962a",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "5379fa6e-0a15-42cd-ad5a-85eef9cf8d56",
+            "name": "사용자승인상세",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "d25f1134-03f2-42d7-b78d-d969f14344e1",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "Users",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "a102fced-4227-41c2-9675-bc3243a3d1bd",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "d25f1134-03f2-42d7-b78d-d969f14344e1",
+            "name": "User Account Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "f109c253-b679-4d84-b4a9-81c90db2ab19",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "Groups",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children": [
+          {
+            "id": "7ae882ee-d6b5-4f6b-a81d-fc87e5bddc5a",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "f109c253-b679-4d84-b4a9-81c90db2ab19",
+            "name": "User Group Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "children_recursive": [
+      {
+        "id": "5379fa6e-0a15-42cd-ad5a-85eef9cf8d56",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "사용자승인",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "0739180e-48ea-4797-994c-177e9f3e962a",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "5379fa6e-0a15-42cd-ad5a-85eef9cf8d56",
+            "name": "사용자승인상세",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      },
+      {
+        "id": "d25f1134-03f2-42d7-b78d-d969f14344e1",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "Users",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "a102fced-4227-41c2-9675-bc3243a3d1bd",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "d25f1134-03f2-42d7-b78d-d969f14344e1",
+            "name": "User Account Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      },
+      {
+        "id": "f109c253-b679-4d84-b4a9-81c90db2ab19",
+        "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+        "parent_id": "85935883-33c2-482f-9171-5838c9955486",
+        "name": "Groups",
+        "depth": 2,
+        "created_at": "2024-10-28T11:17:53.000000Z",
+        "updated_at": "2024-10-28T11:17:53.000000Z",
+        "children_recursive": [
+          {
+            "id": "7ae882ee-d6b5-4f6b-a81d-fc87e5bddc5a",
+            "menu_id": "1dd345d3-077b-4a77-bac0-95b91595578e",
+            "parent_id": "f109c253-b679-4d84-b4a9-81c90db2ab19",
+            "name": "User Group Registration",
+            "depth": 3,
+            "created_at": "2024-10-28T11:17:53.000000Z",
+            "updated_at": "2024-10-28T11:17:53.000000Z",
+            "children_recursive": []
+          }
+        ]
+      }
+    ]
+  }
+]
