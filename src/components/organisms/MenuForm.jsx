@@ -14,7 +14,7 @@ const MenuForm = ({ selectedMenu, allItems, onUpdate, onDelete }) => {
 
     if (name === "parent_id") {
       const selectedParent = allItems.find((item) => item.id === value);
-      const newDepth = selectedParent ? selectedParent.depth + 1 : 1;
+      const newDepth = selectedParent ? Number(selectedParent.depth) + 1 : 1;
 
       setMenu({
         ...menu,

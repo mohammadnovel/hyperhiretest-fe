@@ -107,7 +107,10 @@ const MenuPage = () => {
 
   // Fungsi untuk menampilkan form add menu
   const handleAddMenu = (parentItem) => {
-    setSelectedMenu({ parent_id: parentItem.id, depth: parentItem.depth + 1 });
+    setSelectedMenu({
+      parent_id: parentItem.id,
+      depth: Number(parentItem.depth) + 1,
+    });
     setIsAddingNew(true); // Tampilkan form untuk menambah menu baru
   };
 
